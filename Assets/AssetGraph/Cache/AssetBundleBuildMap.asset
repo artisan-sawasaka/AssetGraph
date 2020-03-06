@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108c2ba5daba841b79b8cc5db3dba1fb, type: 3}
+  m_Name: AssetBundleBuildMap
+  m_EditorClassIdentifier: 
+  m_assetBundles:
+  - m_assetBundleName: bundle_script_story
+    m_assetBundleVariantName: 
+    m_fullName: bundle_script_story
+    m_assets:
+    - original: Assets/DLC/AssetBundle/ADV/Script/Story/101010101.txt
+      lower: assets/dlc/assetbundle/adv/script/story/101010101.txt
+    - original: Assets/DLC/AssetBundle/ADV/Script/Story/101010102.txt
+      lower: assets/dlc/assetbundle/adv/script/story/101010102.txt
+    - original: Assets/DLC/AssetBundle/ADV/Script/Story/101010101.txt
+      lower: assets/dlc/assetbundle/adv/script/story/101010101.txt
+    - original: Assets/DLC/AssetBundle/ADV/Script/Story/101010102.txt
+      lower: assets/dlc/assetbundle/adv/script/story/101010102.txt
+    m_registererId: 05feee43-ab63-46f8-a617-895b72c588fa
+  - m_assetBundleName: bundle_script_unit
+    m_assetBundleVariantName: 
+    m_fullName: bundle_script_unit
+    m_assets:
+    - original: Assets/DLC/AssetBundle/ADV/Script/Unit/201010101.txt
+      lower: assets/dlc/assetbundle/adv/script/unit/201010101.txt
+    - original: Assets/DLC/AssetBundle/ADV/Script/Unit/201010102.txt
+      lower: assets/dlc/assetbundle/adv/script/unit/201010102.txt
+    - original: Assets/DLC/AssetBundle/ADV/Script/Unit/201010101.txt
+      lower: assets/dlc/assetbundle/adv/script/unit/201010101.txt
+    - original: Assets/DLC/AssetBundle/ADV/Script/Unit/201010102.txt
+      lower: assets/dlc/assetbundle/adv/script/unit/201010102.txt
+    m_registererId: 05feee43-ab63-46f8-a617-895b72c588fa
+  - m_assetBundleName: m_script_story
+    m_assetBundleVariantName: unity3d
+    m_fullName: m_script_story.unity3d
+    m_assets:
+    - original: Assets/DLC/AssetBundle/ADV/Script/Story/101010101.txt
+      lower: assets/dlc/assetbundle/adv/script/story/101010101.txt
+    - original: Assets/DLC/AssetBundle/ADV/Script/Story/101010102.txt
+      lower: assets/dlc/assetbundle/adv/script/story/101010102.txt
+    m_registererId: 0be0d8d3-626c-457f-aaf5-e244369ebf0c
+  - m_assetBundleName: m_script_unit
+    m_assetBundleVariantName: unity3d
+    m_fullName: m_script_unit.unity3d
+    m_assets:
+    - original: Assets/DLC/AssetBundle/ADV/Script/Unit/201010101.txt
+      lower: assets/dlc/assetbundle/adv/script/unit/201010101.txt
+    - original: Assets/DLC/AssetBundle/ADV/Script/Unit/201010102.txt
+      lower: assets/dlc/assetbundle/adv/script/unit/201010102.txt
+    m_registererId: 0be0d8d3-626c-457f-aaf5-e244369ebf0c
+  m_version: 1

@@ -1,0 +1,131 @@
+#//------------------------------------------------------------------------------
+#//【ARCA LAST ～終わる世界と歌姫の果実～】
+#//●101010101
+#//世界01・01章・01話・01 チュートリアル改修版
+#//------------------------------------------------------------------------------
+
+# ----------------------
+# 初期設定
+# ----------------------
+#背景マスク、黒一色でスタート
+macro SceneStart ${[方舟][方舟全景][拡張前]} ？？？ 1 "BGM/OpeningShort"
+#bgcolor black 0
+#背景が画像からアニメ付きのPrefab表示変更されたので修正
+fadeout 0.0 black
+
+# ----------------------
+# ストーリー開始、フェードイン
+# ----------------------
+macro FadeInOver2_Default
+
+#？？？=ルフ
+#ボイス：うーん
+macro Talk3 ？？ ${ルフ}
+playvoice ${ルフ} OTH056
+【？？】
+世界は永遠に続くと思ってるの？
+
+#背景マスクフェードアウト、背景画像を表示
+#bgcolor white 1.75
+macro HideMessage
+#背景が画像からアニメ付きのPrefab表示変更されたので修正
+fadein 1.0 black
+waitsync
+
+waittime 0.15
+
+macro ShowChara_Custom ${ルフ} ${通常} ${中央} 1 0.6
+waitsync
+
+waittime 0.5
+
+#ボイス：そうじゃないよ
+macro ShowMessage
+macro Talk3 ？？ ${ルフ}
+playvoice ${ルフ} OTH026
+【？？】
+それは違うね。
+はじまりがあるということは
+必ず終わりがあるんだ
+
+macro Face ${ルフ} ${喜び}
+macro Talk3 ？？ ${ルフ}
+【？？】
+君はその終わりを世界にもたらすんだよ。
+……それだけ聞くと君は悪い奴みたいだね。
+ふふっ
+
+macro Face ${ルフ} ${悲しみ}
+macro Talk3 ？？ ${ルフ}
+【？？】
+だけど……そう、
+世界の終わりかたは大きくわけて２つある
+
+macro Talk3 ？？ ${ルフ}
+【？？】
+『間違った終わり』と……
+『正しい終わり』
+
+#ボイス：ふふっ
+macro Face ${ルフ} ${喜び}
+macro Talk3 ？？ ${ルフ}
+playvoice ${ルフ} OTH033
+【？？】
+君の名は『<color=cyan>クロウ</color>』、『<color=magenta>鴉の英雄</color>』だ。
+君は世界を正しく終わらせる存在
+
+macro Face ${ルフ} ${通常}
+macro Talk3 ？？ ${ルフ}
+【？？】
+え？
+世界が終わったあとはどうなるかって？
+それはね……
+
+#メモ　BGMストップをOFFに
+#stopbgm
+
+#ボイス：そうだね
+macro Face ${ルフ} ${喜び}
+macro Talk3 ？？ ${ルフ}
+playvoice ${ルフ} OTH025
+【？？】
+君自身が一番良く知ってるはず。
+君はどこかで『間違った終わり』を
+経験したことがあるからね
+
+macro HideMessage
+effect ${EM_疑問} 0 0 1
+macro Face ${ルフ} ${驚き}
+waittime 1.5
+
+effectclose ${EM_疑問}
+waitsync
+
+#ボイス：あれ？
+macro ShowMessage
+macro Face ${ルフ} ${通常}
+macro Talk3 ？？ ${ルフ}
+playvoice ${ルフ} OTH027
+【？？】
+……あはは、狐につままれたような顔してる。
+じゃあ、その時の戦いを見せてあげるよ
+
+macro HideMessage
+waittime 0.33
+
+#白フェードアウト、不思議な力で過去を見せる
+fadeoutover 0.75 white
+playse RuneMagicStone -1 false
+waitsync
+
+stopse
+waittime 0.75
+
+# ----------------------
+# ストーリー終了、フェードアウト
+# ----------------------
+macro FadeOutOver2_SceneEnd true
+
+#//------------------------------------------------------------------------------
+#//・END
+#//------------------------------------------------------------------------------
